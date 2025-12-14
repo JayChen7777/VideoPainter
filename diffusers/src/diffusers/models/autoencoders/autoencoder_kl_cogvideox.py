@@ -127,7 +127,7 @@ class CogVideoXCausalConv3d(nn.Module):
         return inputs
 
     def _clear_fake_context_parallel_cache(self):
-        del self.conv_cache
+        # del self.conv_cache
         self.conv_cache = None
 
     def forward(self, inputs: torch.Tensor) -> torch.Tensor:
